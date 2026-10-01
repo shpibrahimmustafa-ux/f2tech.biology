@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#082F49">
+  <meta name="description" content="Интерактивный экологический проект: причины загрязнения океана, научные факты и система предотвращения Ocean Guard.">
+  <title>OCEAN GUARD — Мировой океан в опасности</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#relevance">Перейти к содержанию</a>
+  <header class="header">
+    <a class="brand" href="#home" aria-label="Ocean Guard — главная"><span class="brand-mark">≈</span> OCEAN<span>GUARD</span></a>
+    <button class="menu-toggle" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="main-nav"><span></span><span></span><span></span></button>
+    <nav id="main-nav" aria-label="Основная навигация">
+      <a href="#home">Главная</a><a href="#relevance">Проблема</a><a href="#pollution">Причины</a><a href="#effects">Последствия</a><a href="#solution">Решение</a><a href="#sources">Источники</a>
+    </nav>
+    <a class="header-action" href="#actions">Мой вклад ↗</a>
+  </header>
+  <div class="reading-progress" aria-hidden="true"><span id="reading-bar"></span></div>
+  <main>
+    <section id="home" class="hero" data-slide="Океан в опасности">
+      <div class="ocean-art" aria-hidden="true">
+        <div class="sunlight"></div><div class="orbital orbit-one"></div><div class="orbital orbit-two"></div>
+        <svg class="ocean-waves" viewBox="0 0 1440 500" preserveAspectRatio="none"><defs><linearGradient id="water" x2="0" y2="1"><stop stop-color="#38BDF8" stop-opacity=".35"/><stop offset="1" stop-color="#0369A1" stop-opacity=".1"/></linearGradient></defs><path fill="url(#water)" d="M0 160 Q240 20 480 170 T960 150 T1440 90 V500 H0Z"/><path fill="none" stroke="#DFF3FF" stroke-opacity=".4" d="M0 185 Q240 45 480 195 T960 175 T1440 115"/><path fill="#0284C7" fill-opacity=".4" d="M0 290 Q240 150 480 260 T960 270 T1440 210 V500 H0Z"/></svg>
+        <span class="particle p1"></span><span class="particle p2"></span><span class="particle p3"></span>
+      </div>
+      <div class="hero-content wrap">
+        <p class="eyebrow"><span class="live-dot"></span> Экологический проект</p>
+        <h1>Мировой океан<br>в <em>опасности.</em></h1>
+        <p class="hero-description">Почему загрязняется крупнейшая экосистема нашей планеты и что мы можем с этим сделать?</p>
+        <p class="hero-note">Океан занимает около 71% поверхности Земли. <a href="#src-climate">[1]</a></p>
+        <div class="hero-buttons"><a class="button" href="#relevance">Исследовать проблему <span>↓</span></a><a class="text-link" href="#solution">Наше решение ↗</a></div>
+        <div class="hero-footer"><span>ЗАГРЯЗНЕНИЕ МИРОВОГО ОКЕАНА</span><span>Причины → Последствия → Решения</span></div>
+      </div>
+    </section>
+
+    <section id="relevance" class="section wrap" data-slide="Почему это важно">
+      <p class="eyebrow">01 / Масштаб проблемы</p>
+      <div class="section-heading"><h2>Почему это касается<br><em>каждого?</em></h2><p>Океан связывает климат, живую природу и нашу повседневную жизнь. Загрязнение не останавливается на государственных границах.</p></div>
+      <div class="grid three">
+        <article class="card"><span class="card-symbol">≈</span><h3>Климат планеты</h3><p>Океан накапливает и отдаёт тепло, а течения переносят его между широтами. Изменения океана влияют на погоду. <a href="#src-climate">[1]</a></p></article>
+        <article class="card"><span class="card-symbol">↗</span><h3>Наша жизнь и экономика</h3><p>Морские экосистемы обеспечивают пищевые ресурсы и доходы. Загрязнение угрожает рыболовству, отдыху и прибрежным сообществам. <a href="#src-spills">[7]</a></p></article>
+        <article class="card"><span class="card-symbol">◎</span><h3>Проблема без границ</h3><p>Ветер и течения перемещают плавучие отходы далеко от источника. Поэтому действия одной страны важны для соседей. <a href="#src-study">[3]</a></p></article>
+      </div>
+    </section>
+
+    <section id="facts" class="section wrap" data-slide="Научные факты">
+      <p class="eyebrow">Данные исследований</p>
+      <h2>Загрязнение <em>в цифрах.</em></h2>
+      <div class="stats">
+        <article><strong>≥<span data-count="85">85</span><small>%</small></strong><p>морского мусора составляет пластик</p><a href="#src-unep">UNEP · оценка отчёта 2021 [2]</a></article>
+        <article><strong><span data-count="1.6" data-digits="1">1,6</span><small> млн км²</small></strong><p>модельная площадь тихоокеанского мусорного пятна</p><a href="#src-study">Lebreton et al. · 2018, съёмки 2015–2016 [3]</a></article>
+        <article><strong>≥<span data-count="46">46</span><small>%</small></strong><p>массы пластика в этом пятне — рыболовные сети</p><a href="#src-study">Lebreton et al. · 2018, съёмки 2015–2016 [3]</a></article>
+      </div>
+      <p class="caption">Эти оценки относятся к указанным годам. Данные о тихоокеанском пятне не описывают состав мусора во всём океане.</p>
+    </section>
+
+    <section id="pollution" class="section shaded" data-slide="Источники загрязнения"><div class="wrap">
+      <p class="eyebrow">02 / Причины</p><div class="section-heading"><h2>Что загрязняет <em>океан?</em></h2><p>Основные виды загрязнения, их источники и последствия. Подробности — в карточках.</p></div>
+      <div id="pollution-cards" class="grid three"></div>
+    </div></section>
+
+    <section id="pathways" class="section wrap" data-slide="Путь мусора">
+      <p class="eyebrow">03 / От источника к морю</p><h2>Как мусор попадает <em>в океан?</em></h2>
+      <p class="intro">Один из путей — с городских улиц через ливневые стоки и реки. Выберите этап, чтобы узнать подробнее. <a href="#src-runoff">[8]</a></p>
+      <div class="diagram" data-diagram="route"></div>
+      <p class="caption">Есть и прямые пути: суда и рыболовство, промышленные сбросы, аварии и недостаточно очищенные сточные воды. <a href="#src-study">[3]</a> <a href="#src-spills">[7]</a> <a href="#src-wastewater">[9]</a></p>
+      <div class="pills"><span>Суда → море</span><span>Рыболовство → потерянные снасти → океан</span><span>Промышленность → стоки → реки → океан</span><span>Сельское хозяйство → сток → реки → океан</span><span>Аварии → разливы</span></div>
+    </section>
+
+    <section id="effects" class="section dark" data-slide="Последствия"><div class="wrap">
+      <p class="eyebrow">04 / Последствия</p><h2>Что происходит, когда загрязнение<br>уже <em>попало в океан?</em></h2>
+      <div class="grid three">
+        <article class="card"><span class="tag">Животные</span><h3>Травмы и гибель животных</h3><p>Пластик проглатывают; в сетях и упаковке запутываются. Это может вызывать травмы и гибель. Химические вещества способны оказывать токсическое действие. Изменение численности организмов затрагивает пищевые связи. <a href="#src-unep">[2]</a> <a href="#src-spills">[7]</a></p></article>
+        <article class="card"><span class="tag">Экосистемы</span><h3>Когда не хватает кислорода</h3><p>Избыток азота и фосфора усиливает рост водорослей. При разложении органики расходуется кислород: возникает гипоксия, иногда «мёртвые зоны». Страдают морские местообитания. <a href="#src-nutrients">[6]</a></p></article>
+        <article class="card"><span class="tag">Человек</span><h3>Ущерб рыболовству и туризму</h3><p>Загрязнение пищевых ресурсов, закрытие промыслов и пляжей означают потери для рыболовства и туризма. Риск для здоровья зависит от вещества и дозы; некоторые загрязнители опасны. <a href="#src-spills">[7]</a> <a href="#src-wastewater">[9]</a></p></article>
+      </div>
+      <aside class="notice"><strong>Что известно о микропластике и здоровье?</strong><p>Воздействие на человека ещё изучается. Обзор ВОЗ 2022 года отмечает пробелы в данных: обнаружение частиц само по себе не доказывает конкретное заболевание. Отсутствие полной оценки также не доказывает безопасность. <a href="#src-who">[5]</a></p></aside>
+    </div></section>
+
+    <section id="chain" class="section wrap" data-slide="Цепочка последствий">
+      <p class="eyebrow">05 / Пищевая цепь</p><h2>От отходов <em>к пищевой цепи.</em></h2>
+      <p class="intro">Выберите этап, чтобы проследить дальнейший путь загрязнителей. Их воздействие зависит от вещества, количества и условий.</p>
+      <div class="diagram" data-diagram="chain"></div>
+    </section>
+
+    <section id="example" class="section shaded" data-slide="Тихоокеанское пятно"><div class="wrap split">
+      <div><p class="eyebrow">06 / Реальный пример</p><h2>Большое тихоокеанское<br><em>мусорное пятно.</em></h2><p>Оно находится между Калифорнией и Гавайями. Циркуляция в северной части Тихого океана способствует накоплению плавучих отходов. <a href="#src-patch">[4]</a></p><p>Это неоднородная зона повышенной концентрации: фрагменты пластика, сети и другие предметы распределены в воде. По ней нельзя ходить; часть частиц трудно заметить с судна. <a href="#src-patch">[4]</a></p><div class="notice"><strong>Количество ≠ масса</strong><p>В исследовании 2018 года микропластик составлял 94% оценённого количества частиц, но 8% массы пластика в пятне. Крупные предметы тяжелее. <a href="#src-study">[3]</a></p></div></div>
+      <figure class="gyre"><div class="gyre-ring"></div><div class="gyre-ring inner"></div><span class="hawaii">Гавайи •</span><span class="california">• Калифорния</span><div class="patch-dots">· ˚ · · ˚<br>˚ · · ˚ ·<br>· ˚ · · ˚</div><span class="current">↻</span><figcaption>Северная часть Тихого океана<br>Условная схема течений, не карта масштаба</figcaption></figure>
+    </div></section>
+
+    <section id="solution" class="section dark solution" data-slide="Решение Ocean Guard"><div class="wrap">
+      <p class="eyebrow">07 / Наше предложение</p><h2 class="giant">OCEAN<br><em>GUARD</em><span class="sup">↗</span></h2>
+      <p class="solution-lead">Остановить загрязнение <em>до того,</em><br>как оно достигнет океана.</p>
+      <p class="intro">Ocean Guard — наше предложение для одного водосбора: сократить отходы, перехватить мусор, улучшить очистку стоков и следить за качеством воды. Система пока не испытана. Мы опираемся на подходы UNEP и EPA. <a href="#src-tap">[10]</a> <a href="#src-capture">[11]</a> <a href="#src-micro-water">[12]</a></p>
+      <ol class="guard-track" aria-label="Четыре уровня защиты"><li>01 <b>Предотвращение</b></li><li>02 <b>Перехват</b></li><li>03 <b>Очистка</b></li><li>04 <b>Мониторинг</b></li></ol>
+      <div class="grid two guard-levels">
+        <article class="card"><span class="level">01</span><h3>Предотвращение</h3><p>Сокращать ненужную одноразовую упаковку, развивать повторное использование и раздельный сбор. Обеспечить вывоз и обработку собранных отходов.</p><p class="detail"><b>Кто:</b> город, магазины, жители.<br><b>Проверка:</b> учёт закупок одноразовых изделий и состава мусора.<br><b>Ограничение:</b> нужны доступные альтернативы и работающая инфраструктура. <a href="#src-tap">[10]</a></p></article>
+        <article class="card"><span class="level">02</span><h3>Перехват загрязнения</h3><p>Установить обслуживаемые ловушки у ливневых стоков; на подходящих участках рек собирать плавающий мусор. Регулярно очищать берега.</p><p class="detail"><b>Кто:</b> коммунальные службы и партнёры.<br><b>Проверка:</b> масса, тип отходов и частота обслуживания.<br><b>Ограничение:</b> паводки, засорение, проход рыб; растворённые вещества и мелкие частицы проходят. <a href="#src-capture">[11]</a></p></article>
+        <article class="card"><span class="level">03</span><h3>Очистка сточных вод</h3><p>Модернизировать очистные сооружения, контролировать промышленные сбросы. Подбирать фильтрацию и дополнительные ступени под конкретные загрязнители.</p><p class="detail"><b>Кто:</b> водоканал, предприятия, лаборатория.<br><b>Проверка:</b> пробы на входе и выходе с учётом расхода воды.<br><b>Ограничение:</b> стоимость, энергия и обращение с осадком; универсального фильтра нет. <a href="#src-wastewater">[9]</a> <a href="#src-micro-water">[12]</a></p></article>
+        <article class="card"><span class="level">04</span><h3>Контроль и мониторинг</h3><p>В концепции датчики кислорода, температуры и мутности подают сигнал об изменениях; лаборатория определяет загрязнители. Спутниковые наблюдения помогают выбирать зоны проверки.</p><p class="detail"><b>Кто:</b> специалисты и исследовательская команда.<br><b>Проверка:</b> журнал проб, калибровок и реакции на сигналы.<br><b>Ограничение:</b> датчик мутности не определяет микропластик, спутник не видит каждую частицу. Для определения состава загрязнений нужны пробы воды.</p></article>
+      </div>
+    </div></section>
+
+    <section id="guard-process" class="section shaded" data-slide="Как работает система"><div class="wrap">
+      <p class="eyebrow">08 / Как это работает</p><h2>Как устроен <em>Ocean Guard?</em></h2>
+      <div class="diagram" data-diagram="guard"></div>
+      <aside class="notice"><strong>Куда направляются отходы и стоки</strong><p>Город → сортировка → переработка или безопасное удаление твёрдых отходов.<br>Ливневый сток / река → перехват мусора → контроль → море.<br>Бытовые и промышленные стоки → очистные сооружения → контроль → водоём.</p><p>Очистные сооружения принимают сточные воды, а не всю воду реки. Мусор из ловушек нужно вывозить на переработку или безопасное удаление.</p></aside>
+      <blockquote>Главная задача — сократить поступление загрязнений ещё на суше.</blockquote>
+    </div></section>
+
+    <section id="realism" class="section wrap" data-slide="Реалистичность и пилот">
+      <p class="eyebrow">09 / Проверка решения</p><h2>Одной технологии <em>недостаточно.</em></h2>
+      <p class="intro">Предотвращение + Перехват + Очистка + Контроль. Насколько уменьшится загрязнение, можно выяснить только после измерений на выбранном участке.</p>
+      <div class="table-scroll" role="region" aria-label="Сравнение методов" tabindex="0"><table><caption>Возможности и ограничения Ocean Guard</caption><thead><tr><th scope="col">Метод</th><th scope="col">Что предотвращает</th><th scope="col">Где применяется</th><th scope="col">Сложность</th><th scope="col">Ожидаемый эффект и ограничение</th></tr></thead><tbody>
+        <tr><th scope="row">Повторное использование <a href="#src-tap">[10]</a></th><td>Образование части одноразовых отходов</td><td>Магазины, школы, предприятия</td><td>Низкая–средняя</td><td>Меньше выбрасываемых изделий; зависит от участия и доступности альтернатив.</td></tr>
+        <tr><th scope="row">Ловушки мусора <a href="#src-capture">[11]</a></th><td>Перенос части крупных отходов</td><td>Ливневые выпуски, подходящие участки рек</td><td>Средняя</td><td>Локальное задержание мусора; нужны вывоз и обслуживание, микропластик остаётся.</td></tr>
+        <tr><th scope="row">Очистка стоков <a href="#src-wastewater">[9]</a> <a href="#src-micro-water">[12]</a></th><td>Поступление органики, биогенов и части микрозагрязнений</td><td>Водоканалы, предприятия</td><td>Высокая</td><td>Снижение нагрузки при правильно выбранной технологии; остаются осадок и затраты энергии.</td></tr>
+        <tr><th scope="row">Мониторинг — предложение проекта</th><td>Длительные незамеченные сбросы</td><td>Выпуски, реки, побережье</td><td>Средняя–высокая</td><td>Раннее обнаружение; сам мониторинг воду не очищает, нужны ответственные за реакцию.</td></tr>
+      </tbody></table></div>
+      <h3 class="subheading">Предлагаемый пилот: один водосбор, 8 недель</h3>
+      <div class="grid four timeline"><article class="card"><span class="tag">Недели 1–2</span><h3>Изучить</h3><p>Выбрать безопасный береговой участок. Согласовать работу с владельцем и службами. Зафиксировать исходное количество мусора на постоянном маршруте.</p></article><article class="card"><span class="tag">Недели 3–4</span><h3>Подготовить</h3><p>Организовать раздельный сбор и вывоз. Со специалистами оценить место перехвата, стоимость оборудования, обслуживания, анализа и утилизации.</p></article><article class="card"><span class="tag">Недели 5–6</span><h3>Проверить</h3><p>Провести уборки, повторить учёт. Установку инженерных устройств выполняют только специалисты; школьная команда наблюдает с берега.</p></article><article class="card"><span class="tag">Недели 7–8</span><h3>Сравнить</h3><p>Сопоставить одинаковые маршруты и интервалы, учесть дождь и расход воды. По возможности использовать контрольный участок без вмешательства.</p></article></div>
+      <div class="notice"><strong>Как понять, что стало лучше?</strong><p>Сравниваем число предметов на одинаковой длине берега, состав и массу собранных отходов; с лабораторией — нагрузку загрязнителей (концентрация × расход воды). Больше собранного мусора само по себе не доказывает, что вода стала чище. Публикуем методику, погоду и неопределённости. Бюджет уточняем по местным предложениям, результаты заранее не обещаем.</p></div>
+    </section>
+
+    <section id="impact" class="section shaded" data-slide="Экологический эффект"><div class="wrap">
+      <p class="eyebrow">Ожидаемый результат</p><h2>Какой эффект может дать <em>Ocean Guard?</em></h2>
+      <p class="intro">При регулярном вывозе мусора и обслуживании оборудования загрязнений должно стать меньше. Это ожидаемый результат, который ещё предстоит проверить. <a href="#src-tap">[10]</a> <a href="#src-wastewater">[9]</a></p>
+      <ol class="impact-chain"><li>Меньше неправильно утилизированных отходов</li><li>Меньше мусора попадает в реки</li><li>Часть крупных отходов перехватывается</li><li>Параллельно лучше очищаются сточные воды</li><li>Меньше загрязнения достигает моря</li><li>Снижается нагрузка на морские экосистемы</li></ol>
+      <div class="notice"><strong>Как оценить результат</strong><p>Сравниваем количество мусора на одном маршруте, концентрацию загрязнителей и расход воды до и после вмешательства. Учитываем дождь, сезон и контрольный участок. Сбор мусора и очистка стоков решают разные задачи.</p></div>
+    </div></section>
+
+    <section id="actions" class="section" data-slide="Личный вклад"><div class="wrap split">
+      <div><p class="eyebrow">10 / Личные действия</p><h2>Что может сделать <em>каждый?</em></h2><p>Отметьте привычки, которые готовы поддерживать. Индивидуальные действия дополняют работу бизнеса и городских служб. <a href="#src-tap">[10]</a></p><p id="contribution" class="contribution" aria-live="polite">Ваш экологический вклад: 0 из 7</p><progress id="eco-progress" max="7" value="0" aria-label="Выполненные экологические действия"></progress><p class="caption">Отметьте подходящие пункты. Выбор сохранится в браузере.</p></div>
+      <fieldset class="checklist"><legend>Мой экологический чек-лист</legend>
+        <label><input type="checkbox">Использовать многоразовую бутылку</label><label><input type="checkbox">Использовать многоразовую сумку</label><label><input type="checkbox">Сокращать одноразовый пластик</label><label><input type="checkbox">Правильно сортировать отходы там, где доступна переработка</label><label><input type="checkbox">Не оставлять мусор возле рек и водоёмов</label><label><input type="checkbox">Участвовать в уборках берегов</label><label><input type="checkbox">Не смывать мусор и химические вещества в канализацию</label>
+      </fieldset>
+    </div></section>
+
+    <section id="quiz" class="section wrap" data-slide="Проверка знаний"><p class="eyebrow">11 / Проверьте себя</p><div class="section-heading"><h2>Проверь себя:<br>миф <em>или факт?</em></h2><p>Пять утверждений. Попробуйте отличить научное знание от распространённых заблуждений.</p></div><div id="quiz-content" class="quiz-card"></div></section>
+
+    <section id="sources" class="section shaded" data-slide="Научные источники"><div class="wrap"><p class="eyebrow">12 / Источники</p><h2>Использованные <em>источники.</em></h2><p class="intro">Материалы, на которые мы опирались. В карточках указаны годы публикаций или даты проверки страниц.</p><ol id="source-list" class="source-list"></ol></div></section>
+
+    <section id="defense" class="section wrap" data-slide="Главное за 60 секунд"><p class="eyebrow">13 / Выводы</p><h2>Главное <em>за 60 секунд.</em></h2>
+      <div class="grid two summary-grid"><article class="card"><span class="tag">00–15 с · Проблема</span><p>Пластик, химические вещества и сточные воды нарушают морские экосистемы и создают экологические и экономические риски.</p></article><article class="card"><span class="tag">15–30 с · Причина</span><p>Человеческая деятельность и недостаточный контроль отходов и загрязнённых стоков. Реки и течения переносят загрязнение дальше.</p></article><article class="card"><span class="tag">30–45 с · Решение</span><p>Ocean Guard: сокращение отходов → перехват → очистка → мониторинг. Работаем с источниками загрязнения в пределах водосбора.</p></article><article class="card"><span class="tag">45–60 с · Результат</span><p>Цель — меньше загрязнений в реках, морях и океане. Эффект проверяем пилотом; полностью очистить Мировой океан эта система не обещает.</p></article></div>
+      <details class="team"><summary>Вопросы по проекту <span>+</span></summary><div><p><b>Почему не только уборка?</b> Она не перекрывает новые поступления.<br><b>Как доказать эффект?</b> Сравнить измерения до и после с учётом условий.<br><b>Что остаётся нерешённым?</b> Уже рассеянный микропластик, часть химических загрязнений и необходимость постоянного обслуживания.</p></div></details>
+      <button id="start-presentation" class="button" type="button">Начать презентацию <span>↗</span></button><p class="caption">Основные разделы по очереди · ← → для перехода · Esc для выхода</p>
+    </section>
+    <section id="closing" class="section dark closing"><div class="wrap"><p class="eyebrow">Заключение</p><h2>Меньше отходов в реках —<br><em>меньше загрязнения в океане.</em></h2><p>Сокращение отходов, очистка стоков и постоянный контроль должны работать вместе.</p><a class="button" href="#home">Вернуться наверх ↑</a></div></section>
+  </main>
+  <footer class="footer wrap"><a class="brand" href="#home">≈ OCEAN<span>GUARD</span></a><p>Загрязнение Мирового океана: причины, последствия и пути решения</p><span>Учебный экологический проект · 2026</span></footer>
+  <a id="back-top" class="back-top" href="#home" aria-label="Вернуться наверх">↑</a>
+  <div id="presentation-controls" class="presentation-controls" role="region" aria-label="Управление презентацией" hidden><button id="previous-slide" type="button">← Назад</button><span id="slide-status" aria-live="polite"></span><button id="next-slide" type="button">Далее →</button><button id="exit-presentation" type="button">Выйти из презентации ×</button></div>
+  <noscript><p class="noscript">Для интерактивных схем, карточек источников загрязнения, викторины и презентации включите JavaScript. Основной текст проекта доступен без него.</p></noscript>
+  
+</body>
+</html>
